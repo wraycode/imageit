@@ -31,7 +31,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\PdfToImage\\Test\\": "tests"
+            "wraycode\\ImageIt\\Test\\": "tests"
         }
     },
     "scripts": {
