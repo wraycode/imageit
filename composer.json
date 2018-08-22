@@ -1,9 +1,40 @@
 {
     "name": "wraycode/imageit",
     "description": "A image manipulation package",
+    "keywords": [
+        "wraycode",
+        "pdf-to-image",
+        "pdf",
+        "convert",
+        "image"
+    ],
+    "homepage": "https://github.com/wraycode/imageit",
+    "authors": [
+        {
+            "name": "Jerremy BArton",
+            "email": "wraycode@gmail.com",
+            "homepage": "",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.0",
+        "ext-imagick" : "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^6.2"
+    },
     "autoload": {
-        "psr-0" : {
+        "psr-4": {
             "wraycode\\ImageIt" : "src"
         }
-    }    
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\PdfToImage\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
 }
